@@ -12,7 +12,8 @@ public class Position implements IPosition {
     private boolean isHit;
 
     /**
-     *
+     * @param row
+     * @param column
      */
     public Position(int row, int column) {
         this.row = row;

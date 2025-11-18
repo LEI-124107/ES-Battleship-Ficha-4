@@ -78,6 +78,7 @@ public class Tasks {
     /**
      * This task tests the building up of fleets and takes into consideration the
      * possibility of cheating
+     *
      */
     public static void taskC() {
         Scanner in = new Scanner(System.in);

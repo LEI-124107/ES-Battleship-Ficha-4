@@ -12,10 +12,10 @@
   <description>A simple Battleship.</description>
   <url>https://github.com/alopes-iul/Battleship</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -28,7 +28,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -43,11 +43,25 @@
       <scope>compile</scope>
     </dependency>
 
-  <reporting>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>25</source>
+                    <target>25</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
     <plugins>
       <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
       </plugin>
     </plugins>
-  </reporting>
+    </reporting>
 </project>
